@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Smart Alti Contact</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    </head>
+
+    <body>
+    
+        <header>
+            <a class="logo" href="../index.html"><img src="../images/logo.jpg" alt="logo"></a>
+            <nav>
+                <div class="sideBar" id="sideBar">
+                    <i class="fa solid fa-x" style="color: #ffffff;" onclick="hideMenu()"></i>
+                    <ul class="nav-links">
+                        <li><a href="#">Sign Up</a> </li>
+                        <li><a href="login.html">Login</a> </li>
+                        <li><a href="about.html">About Us</a> </li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <i id="bars" class="fa solid fa-bars"style="color: #ffffff;" onclick="showMenu()"></i>
+            </nav>
+            <script type="text/javascript">
+                window.addEventListener("scroll", function(){
+                    var header = document.querySelector("header");
+                    header.classList.toggle("sticky", window.scrollY > 0);
+                })
+            </script>
+        </header>
+
+        <main>
+
+            <section class="contact-banner">
+                <div class="contact-text-box">
+                    <h1>Contact Us</h1>
+                </div>
+            </section>
+
+            <section class="contact-content">
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-box">
+                            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="contact-text">
+                                <h3>Address</h3>
+                                <p>220 Manning Rd NE,<br> Calgary,Alberta<br> T2E 8K4</p>
+                            </div>
+                        </div>
+                        <div class="contact-box">
+                            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="contact-text">
+                                <h3>Email</h3>
+                                <p>smartalti@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-box">
+                            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="contact-text">
+                                <h3>Phone</h3>
+                                <p>604-618-1169</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <form>
+                            <h2>Send Messages</h2>
+                            <div class="input-box">
+                                <input type="text" name="" required="required">
+                                <span>Full Name</span>
+                            </div>
+                            <div class="input-box">
+                                <input type="text" name="" required="required">
+                                <span>Email</span>
+                            </div>
+                            <div class="input-box">
+                                <textarea required="required"></textarea>
+                                <span>Type your Message...</span>
+                            </div>
+                            <div class="input-box">
+                                <input type="submit" name="" value="Send">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-row">
+                    <div class="footer-col">
+                        <h4>Home</h4>
+                        <ul>
+                            <li><a href="">stuff to add</a></li>
+                            <li><a href="">stuff to add</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Account</h4>
+                        <ul>
+                            <li><a href="">stuff to add</a></li>
+                            <li><a href="">stuff to add</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>About Us</h4>
+                        <ul>
+                            <li><a href="">stuff to add</a></li>
+                            <li><a href="">stuff to add</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright stuff</p>
+            </div>
+        </footer>
+
+    </body> 
+
+</html>
+
+<script>
+    var navLinks = document.getElementById("sideBar");
+
+    function showMenu(){
+        sideBar.style.right = "0";
+    }
+
+    function hideMenu(){
+        sideBar.style.right = "-200px";
+    }
+
+</script>

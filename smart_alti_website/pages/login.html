@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Smart Alti Login</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+        <script src="../js/login.js"></script>
+    </head>
+
+    <body>
+    
+        <header>
+            <a class="logo" href="../index.html"><img src="../images/logo.jpg" alt="logo"></a>
+            <nav>
+                <div class="sideBar" id="sideBar">
+                    <i class="fa solid fa-x" style="color: #ffffff;" onclick="hideMenu()"></i>
+                    <ul class="nav-links">
+                        <li><a href="#">Sign Up</a> </li>
+                        <li><a href="login.html">Login</a> </li>
+                        <li><a href="about.html">About Us</a> </li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <i id="bars" class="fa solid fa-bars"style="color: #ffffff;" onclick="showMenu()"></i>
+            </nav>
+            <script type="text/javascript">
+                window.addEventListener("scroll", function(){
+                    var header = document.querySelector("header");
+                    header.classList.toggle("sticky", window.scrollY > 0);
+                })
+            </script>
+        </header>
+
+        <main>
+
+            <div class="login-banner">
+                <div class="login-wrapper">
+                    <div class="login-form">
+                        <h2>Login</h2>
+                        <form action="#">
+                            <div class="login-input-box">
+                                <span class="login-icon">
+                                    <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+                                </span>
+                                <input type="email" required>
+                                <label>Email</label>
+                            </div>
+                            <div class="login-input-box">
+                                <span class="login-icon">
+                                    <i class="fa-solid fa-lock" style="color: #ffffff;"></i>
+                                </span>
+                                <input type="password" required>
+                                <label>Password</label>
+                            </div>
+                            <div class="login-remember-forgot">
+                                 <label><input type="checkbox">Remember me</label>
+                                 <a href="#">Forgot Password?</a>
+                            </div>
+                            <button type="submit" class="login-remember-btn">Login</button>
+                            <div class="login-register">
+                                <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="register-form">
+                        <h2>Registration</h2>
+                        <form action="#">
+                            <div class="login-input-box">
+                                <span class="login-icon">
+                                    <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+                                </span>
+                                <input type="text" id="registerUsername" required>
+                                <label>Username</label>
+                            </div>
+                            <div class="login-input-box">
+                                <span class="login-icon">
+                                    <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+                                </span>
+                                <input type="email" id="registerEmail" required>
+                                <label>Email</label>
+                            </div>
+                            <div class="login-input-box">
+                                <span class="login-icon">
+                                    <i class="fa-solid fa-lock" style="color: #ffffff;"></i>
+                                </span>
+                                <input type="password" id="registerPassword" required>
+                                <label>Password</label>
+                            </div>
+                            <div class="login-remember-forgot">
+                                 <label><input type="checkbox">I agree to the terms and conditions</label>
+                            </div>
+                            <div id="register-message">
+                                <p>All fields required</p>
+                            </div>
+                            <button type="submit" class="login-remember-btn" onclick = "register()">Register</button>
+                            <div class="login-register">
+                                <p>Already have an account? <a href="#" class="login-link">login</a></p>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </main>
+
+    </body>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>Home</h4>
+                    <ul>
+                        <li><a href="">stuff to add</a></li>
+                        <li><a href="">stuff to add</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Account</h4>
+                    <ul>
+                        <li><a href="">stuff to add</a></li>
+                        <li><a href="">stuff to add</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><a href="">stuff to add</a></li>
+                        <li><a href="">stuff to add</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright stuff</p>
+        </div>
+    </footer>
+
+</html>
+
+<script>
+    var navLinks = document.getElementById("sideBar");
+
+    function showMenu(){
+        sideBar.style.right = "0";
+    }
+
+    function hideMenu(){
+        sideBar.style.right = "-200px";
+    }
+
+    const wrapper = document.querySelector('.login-wrapper');
+    const loginLink = document.querySelector('.login-link');
+    const registerLink = document.querySelector('.register-link');
+
+    registerLink.addEventListener('click', ()=> {
+        wrapper.classList.add('active');
+    });
+
+    loginLink.addEventListener('click', ()=> {
+        wrapper.classList.remove('active');
+    });
+
+
+</script>
