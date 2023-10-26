@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Weather website</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Weather App</h1>
+  </header>
+
+  <div id="userInput">
+    <input type="text" id="locationInput" placeholder="Enter Location">
+    <button id="search-button" onclick = "searchWeather()">Search</button>
+  </div>
+
+
+  <main>
+    <div id="weatherContainer" style="display: none;">
+      <h2 id="location">Vancouver, BC</h2>
+      <img id="weatherPicture" src="weatherIcons/clear.jpg"/>
+      <h2 id="weather" >Sunny</h2>
+      <h2 id="temperature">17C</h1>
+      <h2 id="apparentTemperature">feels like 18C</h2>
+      <h2 id="wind"> 2km/hr</h2>
+      <h2 id="windGust"> 8.81</h2>
+      <h2 id="humidity"> 72%</h2>
+    </div>
+
+  </main>
+
+
+  <script src="weather.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,79 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Lato", sans-serif;
+    background-color: #f1f1f1;
+  }
+  
+  header {
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  #userInput {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  #locationInput {
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #search-button {
+    font-size: 16px;
+    padding: 8px 16px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+  }
+  
+  #weatherContainer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #weatherPicture {
+    max-width: 100px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    margin: 10px 0;
+  }
+  
+  /* Additional styling for weather details */
+  #temperature {
+    font-size: 48px;
+    font-weight: bold;
+  }
+  
+  #apparentTemperature {
+    color: #888;
+  }
+  
+  #wind, #windGust, #humidity {
+    color: #555;
+  }
+
+
